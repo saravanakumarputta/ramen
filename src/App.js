@@ -60,7 +60,9 @@ class App extends React.Component {
 		this.handleSearchFocus = this.handleSearchFocus.bind(this);
 	}
 
-	componentDidMount() {
+	async componentDidMount() {
+		let data = await fetch('https://cors-anywhere.herokuapp.com/http://starlord.hackerearth.com/TopRamen');
+		data = await data.json();
 		let normalizedRestaurantsInfo = normalizeDataForStore(data);
 		this.setState({
 			...normalizedRestaurantsInfo,
