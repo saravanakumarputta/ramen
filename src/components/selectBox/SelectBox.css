@@ -1,0 +1,44 @@
+.selectContainer {
+	width: 100%;
+	position: relative;
+	height: 40px;
+	user-select: none;
+	border: 1px solid #d4d5d9;
+	background: #fff;
+}
+
+.selectContainer:hover {
+	cursor: pointer;
+}
+
+.selectOptions {
+	position: absolute;
+	left: 0;
+	top: 105%;
+	width: 100%;
+	border: 1px solid #d4d5d9;
+	background: #fff;
+	user-select: none;
+	z-index: 1;
+}
+
+.selectBoxOption {
+	margin: 1px 0px;
+	transition: ease 0.3s;
+	height: 40px;
+}
+
+.selectBoxOption:hover {
+	background-color: #f0f0f0;
+	text-indent: 10px;
+}
+
+.selectedOption {
+	background-color: #e0e0e0;
+	font-weight: 700;
+}
+
+.selectBox {
+	font-weight: 700;
+	height: 100%;
+}
